@@ -16,6 +16,7 @@ void imprimirInformacionCliente(cliente cliente){
     NSLog(@"Nombre: %s", cliente.nombre);
     NSLog(@"Apellidos: %s", cliente.apellidos);
     NSLog(@"DNI: %s", cliente.dni);
+    NSLog(@"Edad: %d", cliente.edad);
     if (cliente.hombreOMujer) {
         NSLog(@"Sexo: Hombre");
     }
@@ -23,3 +24,22 @@ void imprimirInformacionCliente(cliente cliente){
         NSLog(@"Sexo: Mujer");
     }
 }
+
+
+void cambiarNombre(cliente* cliente, char* nuevoNombre){
+    cliente->nombre = nuevoNombre;
+}
+void cambiarApellidos(cliente* cliente, char* nuevosApellidos){
+    cliente->apellidos = nuevosApellidos;
+}
+
+void cambiarDireccion(cliente* cliente, char* nuevaDireccion){
+    cliente->direccion = nuevaDireccion;
+}
+
+void cambiarTelefono(cliente* cliente, char* nuevoTelefono){
+    cliente->telefono = nuevoTelefono;
+}
+
+
+

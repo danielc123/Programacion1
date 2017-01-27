@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		099801001E3B9D7F00F8224D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 099800FF1E3B9D7F00F8224D /* main.m */; };
 		099801081E3BB8ED00F8224D /* clientes.m in Sources */ = {isa = PBXBuildFile; fileRef = 099801071E3BB8ED00F8224D /* clientes.m */; };
+		0998010B1E3BC6E000F8224D /* ClaseClientes.m in Sources */ = {isa = PBXBuildFile; fileRef = 0998010A1E3BC6E000F8224D /* ClaseClientes.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		099800FF1E3B9D7F00F8224D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		099801061E3BB8A200F8224D /* clientes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = clientes.h; sourceTree = "<group>"; };
 		099801071E3BB8ED00F8224D /* clientes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = clientes.m; sourceTree = "<group>"; };
+		099801091E3BC6E000F8224D /* ClaseClientes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClaseClientes.h; sourceTree = "<group>"; };
+		0998010A1E3BC6E000F8224D /* ClaseClientes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClaseClientes.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,8 @@
 				099800FF1E3B9D7F00F8224D /* main.m */,
 				099801061E3BB8A200F8224D /* clientes.h */,
 				099801071E3BB8ED00F8224D /* clientes.m */,
+				099801091E3BC6E000F8224D /* ClaseClientes.h */,
+				0998010A1E3BC6E000F8224D /* ClaseClientes.m */,
 			);
 			path = Programacion1;
 			sourceTree = "<group>";
@@ -124,6 +129,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0998010B1E3BC6E000F8224D /* ClaseClientes.m in Sources */,
 				099801081E3BB8ED00F8224D /* clientes.m in Sources */,
 				099801001E3B9D7F00F8224D /* main.m in Sources */,
 			);

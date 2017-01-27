@@ -31,4 +31,10 @@ typedef struct facturaCliente{
 
 void imprimirInformacionCliente(cliente cliente);
 
+void cambiarNombre(cliente* cliente, char* nuevoNombre);
+void cambiarApellidos(cliente* cliente, char* nuevosApellidos);
+void cambiarDireccion(cliente* cliente, char* nuevaDireccion);
+void cambiarTelefono(cliente* cliente, char* nuevoTelefono);
+
+
 #endif /* clientes_h */

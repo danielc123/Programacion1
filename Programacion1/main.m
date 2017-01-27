@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "clientes.h"
-
+#import "ClaseClientes.h"
 
 // Variable estatica
 static int variableEstatica = 100;
@@ -46,14 +46,35 @@ int main(int argc, const char * argv[]) {
         char* cadenaDeTexto = "hola";
         long numeroGrande = 4545669983202;
         
+        // Estructurado
         cliente nuevoCliente;
         nuevoCliente.nombre = "Fulanito";
         nuevoCliente.apellidos = "De tal";
         nuevoCliente.edad = 18;
         nuevoCliente.direccion = "Getafe";
+        imprimirInformacionCliente(nuevoCliente);
+        
+        //Estructurado con reserva de memoria
+        cliente *otroCliente = malloc(sizeof(cliente));
+        otroCliente->nombre = "Fulanito";
+        otroCliente->apellidos = "De tal";
+        otroCliente->edad = 18;
+        otroCliente->direccion = "Getafe";
+        imprimirInformacionCliente(*otroCliente);
         
         facturaCliente nuevaFactura;
-        nuevaFactura.precioTotal = 10.4;
+        nuevaFactura.precioTotal = 1051.40;
+        
+        // Orientado a Objetos con reserva de memoria
+        ClaseClientes *nuevoCliente2 = [[ClaseClientes alloc] init];
+        nuevoCliente2.nombre = @"Fulanito";
+        nuevoCliente2.apellidos = @"De tal";
+        nuevoCliente2.edad = 18;
+        nuevoCliente2.direccion = @"Getafe";
+        [nuevoCliente2 imprimirInformacionCliente];
+        [nuevoCliente2 cambiarNombreCliente:@"Fulanito2"];
+        
+        
         
         // insert code here...
         NSLog(@"Hello, World!");
